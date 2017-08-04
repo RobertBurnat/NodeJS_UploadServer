@@ -1,4 +1,4 @@
-# NodeJS Files upload Server
+# NodeJS - Files uploader server
 
 ###### - Install [**Node.js**](https://nodejs.org/en/download/)
 
