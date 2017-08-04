@@ -4,8 +4,6 @@
 
 ###### - Open a command line window (Windows) or a terminal window (Mac & Linux) 
 
-###### - Type `npm init -y`, to initialize npm manager with all answers 'yes' and press Enter
-
 ###### - Type `npm install --save colors`, to install color module
 
 ###### - Type `npm install -g nodemon`, to install nodemon module
