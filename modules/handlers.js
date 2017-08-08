@@ -1,12 +1,11 @@
 let fs = require('fs');
 let formidable = require('formidable');
-let mv = require('mv');
 
 exports.upload = (request, response) => {
     console.log('Rozpoczynam obsługę żądania upload.');
     let form = new formidable.IncomingForm();
     form.parse(request, (error, fields, files) => {
-        mv(files.upload.path, 'test.png', {mkdirp: true});
+        fs.renameSync(files.upload.path, 'test.png', {mkdirp: true});
         response.writeHead(200, {'Content-Type': 'text/html'});
         response.write('received image:<br/>');
         response.write('<img src="/show" />');
